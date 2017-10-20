@@ -10,4 +10,5 @@ mse1=mean((Y-Y1).^2);
 [A,B]=meshgrid(x1,x2);
 Y11=theta1(1,1)+theta1(2,1)*A+theta1(3,1)*B;
 figure(2)
-surf(x1,x2,Y11)
+s=surf(x1,x2,Y11)
+s.EdgeColor='none';

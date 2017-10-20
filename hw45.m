@@ -26,7 +26,7 @@ Y22=theta2(1,1)+theta2(2,1)*A+theta2(3,1)*B+theta2(4,1)*A.^2+theta2(5,1)*A.*B+th
 figure(3)
 s2=surf(A,B,Y22);
 s2.EdgeColor='none';
-s3.FaceColor='interp';
+s2.FaceColor='interp';
 %problem (f)
 phi3=[ones(n,1) x1.*x2 sin(0.1*x2)];
 theta3=phi3\Y;
